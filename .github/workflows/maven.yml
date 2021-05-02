@@ -22,3 +22,11 @@ jobs:
         distribution: 'adopt'
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: Notify if failure
+      if: always()
+      uses: ravsamhq/notify-slack-action@master
+      with:
+       status: ${{ job.status }}
+       notify_when: 'failure'
+      env:
+       SLACK_WEBHOOK_URL: ${{ secrets.ACTION_MONITORING_SLACK }}
