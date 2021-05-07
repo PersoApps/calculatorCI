@@ -3,7 +3,7 @@ package calculator;
 public class Calculator {
 	
 	public float add(float a, float b) {
-		return a+b+5;
+		return a+b;
 	}
 	
 	public float substract(float a, float b) {
