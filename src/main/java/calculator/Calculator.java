@@ -9,7 +9,7 @@ public class Calculator {
 	 * @return the result
 	 */
 	public float add(float a, float b) {
-		return a+b;
+		return a+b+5;
 	}
 	
 	public float substract(float a, float b) {
