@@ -2,6 +2,12 @@ package calculator;
 
 public class Calculator {
 	
+	/**
+	 * Add operations
+	 * @param a
+	 * @param b
+	 * @return the result
+	 */
 	public float add(float a, float b) {
 		return a+b;
 	}
